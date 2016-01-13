@@ -1,0 +1,296 @@
+// Normalize
+@import normalize
+
+// Color Variables
+// Cold
+$Navy:		#001f3f
+$Blue:		#0074D9
+$Aqua:		#7FDBFF
+$Teal:		#39CCCC
+$Olive:		#3D9970
+$Green:	#2ECC40
+$Lime:		#01FF70
+// Warm
+$Yellow:	#FFDC00
+$Orange:	#FF851B
+$Red:		#FF4136
+$Maroon:	#85144b
+$Fuchsia:	#F012BE
+$Purple:	#B10DC9
+// Greyscale
+$Black:		#111111
+$Darkgray:	#444444
+$Gray:		#888888
+$Ligthgray:	#AAAAAA
+$Silver:		#DDDDDD
+$White:		#FFFFFF
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Bitter|Roboto:900,300)
+$Roboto: 'Roboto', sans-serif
+$Bitter: 'Bitter', serif
+
+// Images
+$Portada: ('../images/portada-1.jpg')
+$Contacto: ('../images/contacto-1.jpg')
+
+
+body
+	background: $White
+	font-family: $Roboto
+
+h1, h2, h3, h4, h5, h6
+	color: $Navy
+	text-align: center
+
+hr
+	width: 60%
+
+.Shadows
+	text-shadow: rgba(0,0,0,0.6) 2px 2px 5px
+
+.area-title
+	font-size: 2.2em !important
+
+.Wrapper
+	width: 80%
+	max-width: 1000px
+	margin: auto
+
+.Wrapper-won
+	margin-bottom: 3em !important
+
+.Wrapper-full
+	width: 100%
+
+.Mainmenu
+	background: $Silver
+	height: 3.75em
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	text-align: center
+	box-shadow: rgba(0,0,0,0.6) 0 1px 2px
+
+.Mainmenu-links
+	padding: 0
+	margin: 0
+	.Mainmenu-item
+		display: inline-block
+		margin-right: 1.5em
+		a
+			color: $Navy
+			text-decoration: none
+			line-height: 3.75em
+			font-weight: 900
+			&:hover
+				color: $Blue
+
+.Header
+	background: url($Portada)
+	background-position: center
+	background-size: cover
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	text-align: center
+	padding-top: 20em
+	padding-bottom: 20em
+
+.Header-title
+	color: $White
+	font-weight: 900
+	font-size: 3.25em
+
+.Header-description
+	color: $White
+	max-width: 85%
+	text-align: center
+	display: inline-block
+	font-size: 1.5em
+
+.Service-items
+	width: 100%
+	text-align: center
+
+.Service-item
+	margin: auto
+	display: inline-block
+	width: 240px
+
+.Service-description
+	display: inline-block
+	color: $Darkgray
+	font-size: 1.3em
+	font-family: $Bitter
+
+.Service-descriptionText
+	margin: auto
+	width: 90%
+
+.Service-descriptionText, .Us-description, .Us-descriptionP1
+	color: $Gray
+	text-align: justify
+
+.Satisfied-clients, .Satisfied-clientsH3
+	margin-bottom: 1em
+
+.Won
+	color: $Gray
+	font-size: 6em
+	margin-bottom: 0
+
+.Satisfied-clientsDescription, .Won-casesDescription
+	text-align: center
+	font-size: 2em
+	font-family: $Bitter
+	color: $Gray
+	margin-top: 0
+
+.Clients
+	background: $Silver
+	padding-top: 0.15em
+	padding-bottom: 1.5em
+
+.Clients-items
+	width: 100%
+	text-align: center
+
+.Clients-itemWrapp
+	display: inline-block
+
+.Clients-item
+	display: block
+	width: 330px !important
+	text-align: center
+
+.Clients-testimonial
+	color: $Darkgray
+
+.fa-quote-left
+	font-size: 1.4em
+
+.Clients-testimonialName
+	font-family: $Bitter !important
+	color: $Darkgray !important
+	font-size: 1.1em
+
+.Us-about
+	width: 100%
+	text-align: center
+	display: inline-block
+	margin-bottom: 3em
+
+.Us-aboutFirm, .Us-aboutValor
+	display: inline-block
+	width: 45%
+
+.Us-aboutFirm
+	margin-right: 5%
+
+.Us-h4
+	color: $Darkgray !important
+	font-family: $Bitter !important
+	font-size: 1.2em
+
+.Us-descriptionP1
+	color: $Darkgray
+
+.Contact
+	background: url($Contacto)
+	background-position: center
+	background-size: cover
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	text-align: center
+	padding-top: 0.5em
+	padding-bottom: 3.5em
+
+.Contact-description
+	margin-top: 2em
+	margin-bottom: 2em
+
+.fa-user
+	color: $Blue
+
+.Contact-member
+	text-align: center
+
+.Contact-memberH3, .Contact-title
+	color: $White !important
+
+.Footer
+	background: $Silver
+	text-align: center
+	padding-bottom: 0.75em
+
+.Footer-brand
+	font-size: 0.85em
+	margin-top: 0
+	padding-top: 1.7em
+	margin-bottom: 0.2em
+
+.Footer-rights
+	margin-top: 0
+	font-size: 0.65em
+
+.menu_bar
+	display: none
+
+@media (max-width: 320px) // Apple iPhone 4, 5
+	.Wrapper-client
+		margin: 5%
+
+	.Clients-items
+		margin: -8%
+
+@media (max-width: 360px) // Google Nexus 5
+	.Wrapper-client
+		margin: 5%
+
+	.Clients-items
+		margin: auto !important
+
+@media (max-width: 375px) // Apple iPhone 6
+	.Clients-items
+		margin: -5%
+
+	.Contact
+		padding-bottom: 1.2em
+
+@media (max-width: 412px) // Google Nexus 6
+	.Contact
+		padding-bottom: 1.2em
+
+@media (max-width: 600px) // Google Nexus 7
+	.Contact
+		padding-bottom: 1.3em
+
+@media (max-width: 768px) // Apple iPad Mini
+	.Header
+		padding-top: 10em
+		padding-bottom: 10em
+
+	.Header-title
+		font-size: 2.4em
+
+	.Header-description
+		font-size: 1.25em
+
+	.Service-item, .Us-aboutFirm, .Us-aboutValor
+		width: 100%
+
+	.Won
+		font-size: 3em
+
+	.Satisfied-clientsDescription, .Won-casesDescription
+		font-size: 1.4em
+
+	.Contact
+		padding-bottom: 1.8em
+
+@media (max-width: 1229px)
+	.Service-item
+		width: 90%
