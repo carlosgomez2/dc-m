@@ -33,6 +33,7 @@ $Bitter: 'Bitter', serif
 // Images
 $Portada: ('../images/portada-1.jpg')
 $Contacto: ('../images/contacto-1.jpg')
+$Won: ('../images/won.png')
 
 
 body
@@ -52,13 +53,16 @@ hr
 .area-title
 	font-size: 2.2em !important
 
+.font-bold
+	font-weight: 900
+
+.ul-services
+	// añadir estilos
+
 .Wrapper
 	width: 80%
 	max-width: 1000px
 	margin: auto
-
-.Wrapper-won
-	margin-bottom: 3em !important
 
 .Wrapper-full
 	width: 100%
@@ -137,16 +141,34 @@ hr
 	margin-bottom: 1em
 
 .Won
-	color: $Gray
+	color: $White
 	font-size: 6em
 	margin-bottom: 0
+
+.Wrapper-won
+	background: url($Won)
+	background-position: center
+	background-size: cover
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	padding-top: 1em
+	padding-bottom: 3em
+
+.won-wrap
+	width: 100%
+	text-align: center
 
 .Satisfied-clientsDescription, .Won-casesDescription
 	text-align: center
 	font-size: 2em
 	font-family: $Bitter
-	color: $Gray
+	color: $White
 	margin-top: 0
+
+.Satisfied-clients, .Won-cases
+	margin-right: 4em
+	display: inline-block
 
 .Clients
 	background: $Silver
@@ -212,7 +234,7 @@ hr
 	margin-top: 2em
 	margin-bottom: 2em
 
-.fa-user
+.fa-user, .fa-map-marker
 	color: $Blue
 
 .Contact-member
