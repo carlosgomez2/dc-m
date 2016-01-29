@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="Servicios Juridicos especializados" />
+	<meta name="keywords" content="derecho juridico, derecho corporativo, derecho familiar, derecho familiar, derecho laboral, propiedad intelectual, propiedad industrial, derecho penal, abogados especializados, derecho civil, derecho mercantil, litigios" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>DC&amp;M | Corporativo jurídico</title>
@@ -12,23 +14,26 @@
     <!-- <div class="menu_bar">
       <a href="#" class="bt-menu"><span><i class="fa fa-bars"></i></span>Menú</a>
     </div> -->
-    <nav class="Mainmenu">
-      <ul class="Mainmenu-links">
-        <li class="Mainmenu-item">
-          <a class="Mainmenu-itemLink" href="#Services">Servicios</a>
+    <nav class="menu menu--ferdinand">
+      <ul class="menu__list">
+        <li class="menu__item menu__item--current">
+          <a class="menu__link" href="#Start">Inicio</a>
         </li>
-        <li class="Mainmenu-item">
-          <a class="Mainmenu-itemLink" href="#Clients">Clientes</a>
+        <li class="menu__item">
+          <a class="menu__link" href="#Services">Servicios</a>
         </li>
-        <li class="Mainmenu-item">
-          <a class="Mainmenu-itemLink" href="#Us">Nosotros</a>
+        <li class="menu__item">
+          <a class="menu__link" href="#Clients">Clientes</a>
         </li>
-        <li class="Mainmenu-item">
-          <a class="Mainmenu-itemLink" href="#Contact">Contacto</a>
+        <li class="menu__item">
+          <a class="menu__link" href="#Us">Nosotros</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#Contact">Contacto</a>
         </li>
       </ul>
     </nav>
-    <div class="Wrapper">
+    <div id="Start" class="Wrapper">
       <h1 class="Header-title Shadows">
       Un equipo de Abogados Comprometidos
       </h1>
@@ -305,5 +310,42 @@
       &copy; Derechos Reservados 2016
     </p>
   </footer>
+  <script src="js/classie.min.js"></script>
+  <script src="js/clipboard.min.js"></script>
+  <script>
+    (function() {
+      [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+        var menuItems = menu.querySelectorAll('.menu__link'),
+          setCurrent = function(ev) {
+
+            var item = ev.target.parentNode; // li
+
+            // return if already current
+            if (classie.has(item, 'menu__item--current')) {
+              return false;
+            }
+            // remove current
+            classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+            // set current
+            classie.add(item, 'menu__item--current');
+          };
+
+        [].slice.call(menuItems).forEach(function(el) {
+          el.addEventListener('click', setCurrent);
+        });
+      });
+
+      [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
+        link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+        new Clipboard(link);
+        link.addEventListener('click', function() {
+          classie.add(link, 'link-copy--animate');
+          setTimeout(function() {
+            classie.remove(link, 'link-copy--animate');
+          }, 300);
+        });
+      });
+    })(window);
+  </script>
 </body>
 </html>

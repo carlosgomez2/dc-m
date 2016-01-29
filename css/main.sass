@@ -1,29 +1,11 @@
 // Normalize
 @import normalize
+// Navigation Effects
+@import nav_effect
+@import components
+// Colors
+@import colors
 
-// Color Variables
-// Cold
-$Navy:		#001f3f
-$Blue:		#0074D9
-$Aqua:		#7FDBFF
-$Teal:		#39CCCC
-$Olive:		#3D9970
-$Green:	#2ECC40
-$Lime:		#01FF70
-// Warm
-$Yellow:	#FFDC00
-$Orange:	#FF851B
-$Red:		#FF4136
-$Maroon:	#85144b
-$Fuchsia:	#F012BE
-$Purple:	#B10DC9
-// Greyscale
-$Black:		#111111
-$Darkgray:	#444444
-$Gray:		#888888
-$Ligthgray:	#AAAAAA
-$Silver:		#DDDDDD
-$White:		#FFFFFF
 
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Bitter|Roboto:900,300)
@@ -66,30 +48,6 @@ hr
 
 .Wrapper-full
 	width: 100%
-
-.Mainmenu
-	background: $Silver
-	height: 3.75em
-	position: fixed
-	left: 0
-	right: 0
-	top: 0
-	text-align: center
-	box-shadow: rgba(0,0,0,0.6) 0 1px 2px
-
-.Mainmenu-links
-	padding: 0
-	margin: 0
-	.Mainmenu-item
-		display: inline-block
-		margin-right: 1.5em
-		a
-			color: $Navy
-			text-decoration: none
-			line-height: 3.75em
-			font-weight: 900
-			&:hover
-				color: $Blue
 
 .Header
 	background: url($Portada)
@@ -316,3 +274,38 @@ hr
 @media (max-width: 1229px)
 	.Service-item
 		width: 90%
+
+
+// .Mainmenu
+// 	line-height: 1
+// 	margin: 0 auto 3em
+// 	background: $Silver
+// // 	height: 3.75em
+// // 	position: fixed
+// // 	left: 0
+// // 	right: 0
+// // 	top: 0
+// // 	text-align: center
+// // 	box-shadow: rgba(0,0,0,0.6) 0 1px 2px
+// //
+// .Mainmenu-links
+// 	position: relative
+// 	display: -webkit-flex
+// 	display: flex
+// 	-webkit-flex-wrap: wrap
+// 	flex-wrap: wrap
+// 	margin: 0
+// 	padding: 0
+// 	list-style: none
+// // 	padding: 0
+// // 	margin: 0
+// 	.Mainmenu-item
+//  		display: inline-block
+//  		margin-right: 1.5em
+// // 		a
+// // 			color: $Navy
+// // 			text-decoration: none
+// // 			line-height: 3.75em
+// // 			font-weight: 900
+// // 			&:hover
+// // 				color: $Blue
