@@ -2,11 +2,13 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <meta name="description" content="Servicios Juridicos especializados" />
 	<meta name="keywords" content="derecho juridico, derecho corporativo, derecho familiar, derecho familiar, derecho laboral, propiedad intelectual, propiedad industrial, derecho penal, abogados especializados, derecho civil, derecho mercantil, litigios" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="js/nav.min.js"></script>
   <title>DC&amp;M | Corporativo jurídico</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
     <!-- <div class="menu_bar">
       <a href="#" class="bt-menu"><span><i class="fa fa-bars"></i></span>Menú</a>
     </div> -->
-    <nav class="menu menu--ferdinand">
+    <nav id="menu" class="menu menu--ferdinand menu__bg menu-opacity">
       <ul class="menu__list">
         <li class="menu__item menu__item--current">
           <a class="menu__link" href="#Start">Inicio</a>
@@ -52,7 +54,7 @@
       <div class="Service-items">
         <article class="Service-item">
           <figure class="Service-imageContainer">
-            <img src="../images/service-1.png" alt="Litigios" class="Service-image">
+            <img src="images/admin.svg" alt="Litigios" class="Service-image">
             <figcaption class="Service-description">
               DERECHO ADMINISTRATIVO
             </figcaption>
@@ -63,7 +65,7 @@
         </article>
         <article class="Service-item">
           <figure class="Service-imageContainer">
-            <img src="../images/service-2.png" alt="Derecho Penal" class="Service-image">
+            <img src="images/penal.svg" alt="Derecho Penal" class="Service-image">
             <figcaption class="Service-description">
               DERECHO PENAL
             </figcaption>
@@ -74,7 +76,7 @@
         </article>
         <article class="Service-item">
           <figure class="Service-imageContainer">
-            <img src="../images/service-3.png" alt="Derecho Corporativo" class="Service-image">
+            <img src="images/family.svg" alt="Derecho Corporativo" class="Service-image">
             <figcaption class="Service-description">
               DERECHO FAMILIAR
             </figcaption>
@@ -85,7 +87,7 @@
         </article>
         <article class="Service-item">
           <figure class="Service-imageContainer">
-            <img src="/images/service-4.jpg" alt="Derecho Familiar" class="Service-image">
+            <img src="images/corporative.svg" alt="Derecho Familiar" class="Service-image">
             <figcaption class="Service-description">
               DERECHO CORPORATIVO
             </figcaption>
@@ -96,24 +98,27 @@
         </article>
         <article class="Service-item">
           <figure class="Service-imageContainer">
-            <img src="/images/service-4.jpg" alt="Derecho Familiar" class="Service-image">
+            <img src="images/employee.svg" alt="Derecho Familiar" class="Service-image">
             <figcaption class="Service-description">
               DERECHO LABORAL
             </figcaption>
           </figure>
           <ul class="ul-services">
             <li>
-              <p class="Service-descriptionText">
+              <p class="Service-descriptionText font-bold">
                 LA SEGURIDAD DE TU EMPRESA:
               </p>
+              <br />
               <p class="Service-descriptionText">
                 Tenemos los especialistas requeridos para la solución de tu problema frente a la Junta de Conciliación y Arbitraje ante demandas OBRERO-PATRONALES de igual forma para evitar los riesgos frente estos imprevistos ofrecemos la Realización de contratos know-how, para tu seguridad empresarial.
               </p>
             </li>
+            <br />
             <li>
-              <p class="Service-descriptionText">
-                TU SEGURIDAD LABORAL
+              <p class="Service-descriptionText font-bold">
+                TU SEGURIDAD LABORAL:
               </p>
+              <br />
               <p class="Service-descriptionText">
                 Sí has sido despedido injustificadamente o te han acosado laboralmente, ofrecemos nuestro servicios garantizando la seguridad a futuro para evitar el despido injustificado y el acoso laboral, obligando a la empresa responsable indemnizar los daños causados.
               </p>
@@ -122,27 +127,31 @@
         </article>
         <article class="Service-item">
           <figure class="Service-imageContainer">
-            <img src="/images/service-4.jpg" alt="Derecho Familiar" class="Service-image">
+            <img src="images/ideas.svg" alt="Derecho Familiar" class="Service-image">
             <figcaption class="Service-description">
               PROPIEDAD INTELECTUAL E INDUSTRIAL
             </figcaption>
           </figure>
           <ul class="ul-services">
             <li>
-              <p class="Service-descriptionText">
+              <p class="Service-descriptionText font-bold">
                 PROPIEDAD INDUSTRIAL:
               </p>
+              <br />
               <p class="Service-descriptionText">
                 Dentro de este rubro existen empresas o particulares que detrás de sus activos principales se encuentran sus marcas, descubrimientos tecnológicos o intelectuales, nombres comerciales, avisos comerciales, patentes y demás por lo que  DC&amp;M, cuenta con el equipo adecuado para el manejo correcto de Ley de la Propiedad Industrial, para realizar los diferentes registros de PROPIEDAD INDUSTRIAL, que tu empresa o cualquier particular requiera y necesite, al igual que la protección por medio del litigio de tu Registro o Patente frente a los Tribunales.
               </p>
             </li>
+            <br />
             <li>
-              <p class="Service-descriptionText">
+              <p class="Service-descriptionText font-bold">
                 PROPIEDAD INTELECTUAL:
               </p>
+              <br />
               <p class="Service-descriptionText">
                 Dentro de este rubro existen empresas o particulares que detrás de sus activos principales se encuentran sus obras teatrales, literaria, musical, teatro, danza, pictórica o dibujo, escultórica o plástica, caricatura e historieta, arquitectura, cinematografía (y otras obras audiovisuales), radio y televisión, fotografía, diseño gráfico, entre otras.
               </p>
+              <br />
               <p class="Service-descriptionText">
                 Por lo que  DC&amp;M, cuenta con el equipo adecuado para la correcta interpretación de la Ley de Derechos de Autor, para realizar los diferentes registros de PROPIEDAD INTELECTUAL, que tu empresa o cualquier particular requiera y necesite, al igual que la protección por medio del litigio de tu Registro o Patente frente a los Tribunales.
               </p>
@@ -151,24 +160,27 @@
         </article>
         <article class="Service-item">
           <figure class="Service-imageContainer">
-            <img src="/images/service-4.jpg" alt="Derecho Familiar" class="Service-image">
+            <img src="images/merchant.svg" alt="Derecho Familiar" class="Service-image">
             <figcaption class="Service-description">
               DERECHO CIVIL Y MERCANTIL:
             </figcaption>
           </figure>
           <ul class="ul-services">
             <li>
-              <p class="Service-descriptionText">
+              <p class="Service-descriptionText font-bold">
                 DERECHO MERCANTIL:
               </p>
+              <br />
               <p class="Service-descriptionText">
                 Esta materia atañe a la regulación de comercio, así bien y para sintetizar DC&amp;M, cuanta con la asesoría jurídica y litigio adecuado en términos de RESPONSABILIDAD CIVIL, ACUERDOS COMERCIALES Y CIVILES, TALES COMO CONTRATOS DE COMPRA-VENTA, PRESTACIÓN DE SERVICIOS, ALQUILERES, APERTURA DE CRÉDITOS, DISTRIBUCIONES Y SERVICIO DE AGENCIA, PRÉSTAMOS (COMODATOS), INTERCAMBIO, SUMINISTROS, BONOS, ACUERDOS POR DEFUNCIÓN, entre otros.
               </p>
             </li>
+            <br />
             <li>
-              <p class="Service-descriptionText">
+              <p class="Service-descriptionText font-bold">
                 TITULOS DE CRÉDITO:
               </p>
+              <br />
               <p class="Service-descriptionText">
                 Así mismo DC&amp;M lleva adelante la ejecución de operaciones con instrumentos comerciales tales como pagarés, cheques, recibos legales, acciones, y varios trámites más, los cuales puede solicitar el cliente a nuestro equipo de trabajo con la solución que usted requiere.
               </p>
@@ -179,11 +191,11 @@
     </section>
   </div>
   <div class="Wrapper-full">
-    <div class="Wrapper-won">
+    <div id="counter" class="Wrapper-won">
       <div class="won-wrap">
         <div class="Satisfied-clients">
           <p class="Satisfied-clientsH3">
-            <h3 class="Won"><i class="fa fa-thumbs-up"></i> 65</h3>
+            <h3 class="Won"><i class="fa fa-thumbs-up"></i><span class="count">152</span></h3>
           </p>
           <p class="Satisfied-clientsDescription">
             Clientes Satisfechos
@@ -191,7 +203,7 @@
         </div>
         <div class="Won-cases">
           <p class="Won-casesH3">
-            <h3 class="Won"><i class="fa fa-hand-peace-o"></i> 83</h3>
+            <h3 class="Won"><i class="fa fa-hand-peace-o"></i><span class="count">293</span></h3>
           </p>
           <p class="Won-casesDescription">
             Casos Ganados
@@ -310,6 +322,8 @@
       &copy; Derechos Reservados 2016
     </p>
   </footer>
+  <!-- Scripts -->
+  <script src="js/counter.min.js"></script>
   <script src="js/classie.min.js"></script>
   <script src="js/clipboard.min.js"></script>
   <script>
@@ -318,7 +332,7 @@
         var menuItems = menu.querySelectorAll('.menu__link'),
           setCurrent = function(ev) {
 
-            var item = ev.target.parentNode; // li
+            var item = ev.target.parentNode;
 
             // return if already current
             if (classie.has(item, 'menu__item--current')) {
@@ -347,5 +361,6 @@
       });
     })(window);
   </script>
+  <!-- /Scripts -->
 </body>
 </html>
