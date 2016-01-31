@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="css/main.css" />
   <script src="js/jquery-1.12.0.min.js"></script>
   <script type="text/javascript" src="js/nav.min.js"></script>
+  <!-- Google Maps API -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPgs_gD4FhLKe6vjr0IOmFbVQq8QqJVTE&sensor=false"></script>
+  <!-- /Google Maps API -->
   <title>DC&amp;M | Corporativo jurídico</title>
 </head>
 <body>
@@ -307,13 +310,14 @@
           <h3 class="Contact-memberH3"><i class="fa fa-user"></i> Cesar Moreno Hérnandez | Abogado | (044) 722 512-3820</h3>
         </p>
         <p class="Contact-member">
-          <h3 class="Contact-memberH3"><i class="fa fa-map-marker"></i> Paseo de la Reforma No. 87, Álvaro Obregón, Ciudad de México. </h3>
+          <h3 class="Contact-memberH3"><i class="fa fa-map-marker"></i> Paseo de la Reforma No. 222, Benito Júarez, Ciudad de México. </h3>
         </p>
         <!-- <p class="Contact-member">
           <h3 class="Contact-memberH3"><i class="fa fa-user"></i> Cesar Moreno Hérnandez | Abogado | </h3>
         </p> -->
       </div>
     </section>
+    <div id="map"></div>
   <footer id="Footer" class="Footer">
     <h5 class="Footer-brand">
       DC&amp;M | Corporativo
@@ -360,6 +364,41 @@
         });
       });
     })(window);
+  </script>
+  <!-- Google Maps -->
+  <script type="text/javascript">
+  // When the window has finished loading create our google map below
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+    // Basic options for a simple Google Map
+    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+    var mapOptions = {
+      // How zoomed in you want the map to start at (always required)
+      zoom: 15,
+
+      // The latitude and longitude to center the map (always required)
+      center: new google.maps.LatLng(19.4283222, -99.1622111), // Reforma 222
+
+      // How you would like to style the map.
+      // This is where you would paste any style found on Snazzy Maps.
+      styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+                };
+
+    // Get the HTML DOM element that will contain your map
+    // We are using a div with id="map" seen below in the <body>
+    var mapElement = document.getElementById('map');
+
+    // Create the Google Map using our element and options defined above
+    var map = new google.maps.Map(mapElement, mapOptions);
+
+    // Let's also add a marker while we're at it
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(19.4283222, -99.1622111),
+      map: map,
+      title: 'Snazzy!'
+    });
+  }
   </script>
   <!-- /Scripts -->
 </body>
