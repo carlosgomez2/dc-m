@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -392,11 +392,15 @@
     // Create the Google Map using our element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
 
+    // Customizations
+    var myLatLng = new google.maps.LatLng(19.4283222, -99.1622111);
+    var iconBase = 'https://i.imgur.com/';
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-      position: new google.maps.LatLng(19.4283222, -99.1622111),
+      position: myLatLng,
       map: map,
-      title: 'Snazzy!'
+      icon: iconBase + 'DMEy1sU.png',
+      title: 'DC&M'
     });
   }
   </script>
