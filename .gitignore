@@ -2,4 +2,5 @@
 *.php
 *.log
 .htaccess
-*.swo
+.gitignore.swo
+npm-debug.log
