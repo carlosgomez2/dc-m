@@ -1,1 +1,5 @@
 *.map
+*.php
+*.log
+.htaccess
+*.swo
