@@ -5,7 +5,7 @@ $(function() {
  		var pTop = $('body').scrollTop();
     	console.log( pTop + ' - ' + oTop );
  		if( pTop > oTop ){
-				start_count();
+     		start_count().one();
  		}
 	});
 });

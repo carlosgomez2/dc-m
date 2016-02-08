@@ -20,10 +20,10 @@ $Portada: ('../images/portada-1.jpg')
 $Contacto: ('../images/c2-a.jpg')
 $Won: ('../images/won.png')
 
-*
-	margin: 0
-	padding: 0
-	box-sizing: border-box
+// *
+// 	margin: 0
+// 	padding: 0
+// 	box-sizing: border-box
 
 body
 	background: $White
@@ -220,7 +220,7 @@ hr
 	-o-background-size: cover
 	text-align: center
 	padding-top: 0.5em
-	padding-bottom: 3.5em
+	padding-bottom: 2.5em
 
 .Contact-description
 	margin-top: 2em
@@ -325,11 +325,13 @@ hr
 		top: 2.8em
 		left: 0
 		width: 70%
+		height: 100%
 		transform: translateX(-100%)
 		transition: all 0.3s
+		background-color: rgba(255,255,255,0.9) !important
 
 	.menu__list
-		flex-direction: column
+		flex-direction: column !important
 
 	.menu-opacity
 		background: $White
@@ -337,3 +339,6 @@ hr
 @media (max-width: 1229px)
 	.Service-item
 		width: 90%
+
+	// .menu__list
+	// 	flex-direction: row !important
