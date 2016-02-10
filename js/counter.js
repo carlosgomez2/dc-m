@@ -1,12 +1,12 @@
 $(function() {
 	var oTop = $('#counter').offset().top - window.innerHeight;
-    $(window).scroll(function(){
+		$(window).scroll(function(){
 
- 		var pTop = $('body').scrollTop();
-    	console.log( pTop + ' - ' + oTop );
- 		if( pTop > oTop ){
+			var pTop = $('body').scrollTop();
+			console.log( pTop + ' - ' + oTop );
+			if( pTop > oTop ){
 				start_count();
- 		}
+			}
 	});
 });
 
